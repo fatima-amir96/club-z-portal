@@ -37,3 +37,4 @@ Additional resources used:
 - AI-assisted tools for brainstorming, debugging, code explanations, and development guidance
 
 All final design decisions, code implementation, and project customization were completed by me.
+# club-z-portal
