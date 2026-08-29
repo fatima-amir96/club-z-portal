@@ -34,7 +34,18 @@ Additional resources used:
 - React and React Router documentation
 - Vite documentation
 - MDN Web Docs
-- AI-assisted tools for brainstorming, debugging, code explanations, and development guidance
+- AI-assisted tools for brainstorming, debugging, code explanations, image generation, and development guidance
 
 All final design decisions, code implementation, and project customization were completed by me.
+
 # club-z-portal
+
+# Concepts and Techniques practiced in this project
+
+- Frontend/Backend authurization
+- grid layouts
+- API Implementation
+
+# New Concepts and techniques learned for this project
+
+- clip path

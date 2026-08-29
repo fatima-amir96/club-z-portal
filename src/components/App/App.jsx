@@ -1,37 +1,54 @@
 //import { useState } from "react";
 //import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import { useNavigate } from "react-router-dom";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 
-import tutorStudentImage from "../../assets/images/tutorStudentImage.png";
+import WelcomeTutorImg from "../../assets/images/login_background-tutor-img.svg";
+import lockIcon from "../../assets/icons/lock-icon.svg";
+import clubZlogo from "../../assets/images/club-z-logo.png";
+import TutorDashboard from "../../pages/Tutor/dashboard/TutorDashboard";
+
 
 function App() {
   //const [count, setCount] = useState(0);
 
   return (
     <>
-      <section className="login_page" id="center">
-        <div className="login_background">
-          <img
-            src={tutorStudentImage}
-            className="login_background-img"
-            width="170"
-            height="179"
-            alt="background-img"
-          />
-          <div className="login_background-shape"></div>
+      <section className="login_page">
+        <img
+          src={WelcomeTutorImg}
+          className="login_background"
+          alt="welcometutorimage"
+        />
+        <div className="login_content">
+          <div className="login-left">
+            <img src={clubZlogo} className="login__logo" alt="logo"></img>
+            <div className="login_welcome">
+              <h1>Hello,</h1>
+              <h2> Welcome Back!</h2>
+              <h3> Club Z Tutoring Portal</h3>
+              <p>
+                Access your tutoring portal to view sessions, schedules, and
+                messages{" "}
+              </p>
+            </div>
+            <button
+              type="button"
+              className="login_button"
+              onClick={() => navigate("/student/dashboard")}
+            >
+              <img
+                src={lockIcon}
+                className="login_button-lockIcon"
+                alt="lockIcon"
+              ></img>
+              Log In
+            </button>
+          </div>
         </div>
-        <div className="login_welcome">
-          <h1>Welcome!</h1>
-          <p>Signin to access your tutor portal</p>
-        </div>
-        <button
-          type="button"
-          className="login_button"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          <img className="login_button-lockIcon" alt="lockIcon"></img>
-          Login
-        </button>
       </section>
     </>
   );
