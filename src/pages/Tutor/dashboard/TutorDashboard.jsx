@@ -1,17 +1,32 @@
-import clubZlogo from "../../assets/images/club-z-logo.png";
+import clubZlogo from "../../../assets/images/club-z-logo.png";
+import {
+  alertBlk,
+  alertBlue,
+  calendarBlk,
+  calendarBlue,
+  clockBlk,
+  clockBlue,
+  clockIcon,
+  lockIcon,
+  messageBlk,
+  messageBlue,
+  peopleBlK,
+  peopleBlue,
+  peopleIcon,
+} from "../../../assets/icons/icons";
 
 function TutorDashboard() {
   return (
     <div className="Tdashboard">
       <div className="TDheader-container">
         <h1>DashBoard</h1>
-        <h2>Here's what's happeing with you tutoring sessions</h2>
+        <h2>Here's what's happening with you tutoring sessions</h2>
         <div className="date-time-location"></div>
         <button className="alerts-button">
-          <img src="" alt="alert-button" />
+          <img src={alertBlk} alt="alert-button" />
         </button>
         <button className="messages-button">
-          <img src="" alt="alert-button" />
+          <img src={messageBlk} alt="alert-button" />
         </button>
       </div>
       <div className="TDpage-container">
