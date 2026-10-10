@@ -3,13 +3,17 @@
 import "./App.css";
 import Login from "../../pages/login/Login.jsx";
 import TutorDashboard from "../../pages/Tutor/dashboard/tutorDashboard";
-
+import { Routes, Route } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
-    <Routes>
-      <route path="/" element={<login />} />
-      <Route path="/tutor/dashboard" element={<tutorDashboard />} />
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/tutor/dashboard" element={<TutorDashboard />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,123 @@
+.Tdashboard_page {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.TDheader-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.TDSideBar {
+  width: 300px;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+.sideBar_btns {
+  color: white;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+.schudule-btn {
+  color: black;
+  background-color: white;
+  border: none;
+  padding: 15px;
+  font-size: 23px;
+}
+
+.schudule-btn:hover {
+  color: white;
+  background-color: #2f78bd;
+  cursor: pointer;
+}
+.students-btn {
+  color: black;
+  background-color: white;
+  border: none;
+  padding: 15px;
+  font-size: 23px;
+}
+.students-btn:hover {
+  color: white;
+  background-color: #2f78bd;
+  cursor: pointer;
+}
+.reports-btn {
+  color: black;
+  background-color: white;
+  border: none;
+  padding: 15px;
+  font-size: 23px;
+}
+.reports-btn:hover {
+  color: white;
+  background-color: #2f78bd;
+  cursor: pointer;
+}
+.profile-btn {
+  color: black;
+  background-color: white;
+  border: none;
+  padding: 15px;
+  font-size: 23px;
+}
+.profile-btn:hover {
+  color: white;
+  background-color: #2f78bd;
+  cursor: pointer;
+}
+.logout-btn {
+  width: 85px;
+  padding: 8px;
+}
+.sideBar_logo img {
+  width: 95px;
+  height: 80px;
+  padding: 0;
+}
+.alerts-button {
+  border: none;
+  background-color: white;
+  padding: 0;
+}
+.alerts-button img {
+  width: 30px;
+  height: 30px;
+
+  border: none;
+  background-color: white;
+}
+.messages-button {
+  border: none;
+  background: white;
+  padding: 0;
+}
+.messages-button img {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: white;
+}
+
+.TD_main-content {
+  flex: 1;
+  min-width: 0;
+  box-shadow: inset 2px 0 5px rgba(0, 0, 0, 0.05);
+}
+.TD_main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+.TDSchedule {
+  font-size: 15px;
+  color: black;
+}
