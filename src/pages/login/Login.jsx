@@ -42,6 +42,11 @@ function Login() {
               ></img>
               Log In
             </button>
+            <button
+              type="button"
+              className="signInGoogle"
+              onClick={() => navigate()}
+            ></button>
           </div>
         </div>
       </section>

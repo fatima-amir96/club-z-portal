@@ -9,8 +9,8 @@ import lockIcon from "./lock-icon.svg";
 import messageBlk from "./message-blk.svg";
 import messageBlue from "./message-blue.svg";
 import peopleBlK from "./people-blk.svg";
-import peopleBlue from "./people-Blue.svg";
-import peopleIcon from "./people-Icon.svg";
+import peopleBlue from "./people-blue.svg";
+import peopleIcon from "./people-icon.svg";
 
 export {
   alertBlk,

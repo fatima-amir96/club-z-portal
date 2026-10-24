@@ -1,21 +1,134 @@
-.Tdashboard_page {
+.TDpage-container {
   height: 100vh;
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
   padding: 30px;
   box-sizing: border-box;
+  display: flex;
+  outline: 3px solid red;
 }
+
 .TDheader-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 15px;
 }
+
+.TD_main-content {
+  flex: 1;
+  min-width: 0;
+  outline: 3px solid green;
+  box-shadow: inset 2px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.TD_main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.TD-main-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.Tdashboard_page {
+  outline: 3px solid purple;
+}
+
 .TDSideBar {
   width: 300px;
   flex-direction: column;
+  display: flex;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  outline: 3px solid blue;
 }
+
+/* ========================================
+   SIDEBAR BUTTONS & ICONS
+======================================== */
+
+.alerts-button {
+  border: none;
+  background-color: white;
+  padding: 0;
+}
+
+.alerts-button img {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border: none;
+  background-color: white;
+}
+
+.logout-btn {
+  width: 85px;
+  padding: 8px;
+  margin-top: auto;
+}
+
+.messages-button {
+  border: none;
+  background: white;
+  padding: 0;
+}
+
+.messages-button img {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: white;
+}
+
+.profile-btn {
+  color: black;
+  background-color: white;
+  border: none;
+  padding: 15px;
+  font-size: 23px;
+}
+
+.profile-btn:hover {
+  color: white;
+  background-color: #2f78bd;
+  cursor: pointer;
+}
+
+.reports-btn {
+  color: black;
+  background-color: white;
+  border: none;
+  padding: 15px;
+  font-size: 23px;
+}
+
+.reports-btn:hover {
+  color: white;
+  background-color: #2f78bd;
+  cursor: pointer;
+}
+
+.schedule-btn {
+  color: black;
+  background-color: white;
+  border: none;
+  padding: 15px;
+  font-size: 23px;
+}
+
+.schedule-btn:hover {
+  color: white;
+  background-color: #2f78bd;
+  cursor: pointer;
+}
+
 .sideBar_btns {
+  justify-content: space-between;
   color: white;
   border: none;
   display: flex;
@@ -24,19 +137,43 @@
   align-items: flex-start;
   padding: 20px 0;
 }
-.schudule-btn {
-  color: black;
-  background-color: white;
-  border: none;
-  padding: 15px;
-  font-size: 23px;
-}
 
-.schudule-btn:hover {
-  color: white;
-  background-color: #2f78bd;
+.sideBar_btns button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  text-align: left;
   cursor: pointer;
 }
+
+.sideBar_btns button img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: block;
+}
+
+.sideBar_logo img {
+  width: 95px;
+  height: 80px;
+  padding: 0;
+}
+
+.sideBar_profile-photo img {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border: none;
+  background-color: white;
+}
+
 .students-btn {
   color: black;
   background-color: white;
@@ -44,80 +181,35 @@
   padding: 15px;
   font-size: 23px;
 }
+
 .students-btn:hover {
   color: white;
   background-color: #2f78bd;
   cursor: pointer;
 }
-.reports-btn {
-  color: black;
-  background-color: white;
-  border: none;
-  padding: 15px;
-  font-size: 23px;
-}
-.reports-btn:hover {
-  color: white;
-  background-color: #2f78bd;
-  cursor: pointer;
-}
-.profile-btn {
-  color: black;
-  background-color: white;
-  border: none;
-  padding: 15px;
-  font-size: 23px;
-}
-.profile-btn:hover {
-  color: white;
-  background-color: #2f78bd;
-  cursor: pointer;
-}
-.logout-btn {
-  width: 85px;
-  padding: 8px;
-}
-.sideBar_logo img {
-  width: 95px;
-  height: 80px;
-  padding: 0;
-}
-.alerts-button {
-  border: none;
-  background-color: white;
-  padding: 0;
-}
-.alerts-button img {
-  width: 30px;
-  height: 30px;
 
-  border: none;
-  background-color: white;
-}
-.messages-button {
-  border: none;
-  background: white;
-  padding: 0;
-}
-.messages-button img {
+/* ========================================
+   DASHBOARD CONTENT & WIDGETS
+======================================== */
+
+.session_status button img {
   width: 30px;
   height: 30px;
+  display: block;
   border: none;
   background-color: white;
 }
 
-.TD_main-content {
-  flex: 1;
-  min-width: 0;
-  box-shadow: inset 2px 0 5px rgba(0, 0, 0, 0.05);
-}
-.TD_main-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  padding: 20px;
-}
 .TDSchedule {
   font-size: 15px;
   color: black;
+}
+
+.TDSchedule img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+  border: none;
+  background-color: white;
 }
